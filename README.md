@@ -21,12 +21,30 @@
   <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
 </p>
 
-## GitHub 统计
+## 📊 GitHub 统计
 
-![gqy20's GitHub stats](https://github-readme-stats.vercel.app/api?username=gqy20&show_icons=true&theme=radical)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=gqy20&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
-[![GitHub Trophies](https://github-readme-trophy.vercel.app/?username=gqy20&theme=radical&column=7)](https://github.com/ryo-ma/github-readme-trophy)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=gqy20&theme=radical)
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=gqy20&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gqy20&layout=compact&theme=radical"/>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com/?user=gqy20&theme=radical&locale=zh_Hans"/>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://github-readme-trophy.vercel.app/?username=gqy20&theme=radical&column=4&margin-w=15&margin-h=15"/>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gqy20&theme=radical&hide_border=true"/>
+</div>
 
 ## 联系我
 
