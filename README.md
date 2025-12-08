@@ -100,6 +100,22 @@
   </tr>
 </table>
 
+<!-- 第三行：另外两张卡片 -->
+<table align="center" style="width: 100%; max-width: 700px; border-collapse: collapse; border-style: none; border-width: 0; border-spacing: 0; margin-top: 15px;">
+  <tr>
+    <!-- 左侧：46% -->
+    <td style="width: 46%; padding: 0; border-style: none; border-width: 0;">
+      <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/2-most-commit-language.svg" alt="Most Commit Language" style="width: 100%;"/>
+    </td>
+    <!-- 中间空隙：8% -->
+    <td style="width: 8%; border-style: none; border-width: 0;">&nbsp;</td>
+    <!-- 右侧：46% -->
+    <td style="width: 46%; padding: 0; border-style: none; border-width: 0;">
+      <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/3-stats.svg" alt="Stats" style="width: 100%;"/>
+    </td>
+  </tr>
+</table>
+
 <!-- 3D 贡献图 (全宽) -->
 <div align="center" style="margin-top: 30px;">
   <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图" style="width: 100%; max-width: 800px;"/>
