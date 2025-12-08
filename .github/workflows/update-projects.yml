@@ -12,6 +12,9 @@ on:
     paths:
       - '.github/workflows/update-projects.yml'
 
+permissions:
+  contents: write
+
 jobs:
   update-projects:
     runs-on: ubuntu-latest
@@ -29,8 +32,9 @@ jobs:
           script: |
             const { owner, repo } = context.repo;
 
-            // 获取用户的所有仓库
-            const repos = await github.rest.repos.listForAuthenticatedUser({
+            // 获取用户的所有仓库（使用公开API）
+            const repos = await github.rest.repos.listForUser({
+              username: owner,
               type: 'owner',
               sort: 'updated',
               direction: 'desc',
