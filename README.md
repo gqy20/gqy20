@@ -76,26 +76,29 @@
 
 ### 🎯 Profile Summary
 
-<!-- 上层：Profile Details (全宽，容器宽度600px) -->
-<div align="center" style="margin-bottom: 15px; width: 100%; max-width: 600px;">
-  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 100%;"/>
-</div>
+<!-- 使用表格布局确保并排显示 -->
+<table align="center" style="width: 100%; max-width: 600px; border-collapse: collapse; margin-bottom: 15px;">
+  <tr>
+    <td colspan="3" align="center" style="padding: 0;">
+      <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 100%;"/>
+    </td>
+  </tr>
+</table>
 
-<!-- 下层：使用相同宽度容器，左侧46%，右侧46%，中间8%空隙 -->
-<div align="center" style="width: 100%; max-width: 600px;">
-  <div style="display: flex; justify-content: space-between; width: 100%;">
+<table align="center" style="width: 100%; max-width: 600px; border-collapse: collapse;">
+  <tr>
     <!-- 左侧：46% -->
-    <div style="width: 46%;">
+    <td style="width: 46%; padding: 0;">
       <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/1-repos-per-language.svg" alt="Repos per Language" style="width: 100%;"/>
-    </div>
+    </td>
     <!-- 中间空隙：8% -->
-    <div style="width: 8%;"></div>
+    <td style="width: 8%;">&nbsp;</td>
     <!-- 右侧：46% -->
-    <div style="width: 46%;">
+    <td style="width: 46%; padding: 0;">
       <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="width: 100%;"/>
-    </div>
-  </div>
-</div>
+    </td>
+  </tr>
+</table>
 
 <!-- 3D 贡献图 (全宽) -->
 <div align="center" style="margin-top: 20px;">
