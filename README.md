@@ -77,31 +77,31 @@
 ### 🎯 Profile Summary
 
 <!-- 使用表格布局确保并排显示 -->
-<table align="center" style="width: 100%; max-width: 600px; border-collapse: collapse; border: none; margin-bottom: 15px;">
+<table align="center" style="width: 100%; max-width: 700px; border-collapse: collapse; border-style: none; border-width: 0; margin-bottom: 15px; border-spacing: 0;">
   <tr>
-    <td colspan="3" align="center" style="padding: 0; border: none;">
+    <td colspan="3" align="center" style="padding: 0; border-style: none; border-width: 0;">
       <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 100%;"/>
     </td>
   </tr>
 </table>
 
-<table align="center" style="width: 100%; max-width: 600px; border-collapse: collapse; border: none;">
+<table align="center" style="width: 100%; max-width: 700px; border-collapse: collapse; border-style: none; border-width: 0; border-spacing: 0;">
   <tr>
     <!-- 左侧：46% -->
-    <td style="width: 46%; padding: 0; border: none;">
+    <td style="width: 46%; padding: 0; border-style: none; border-width: 0;">
       <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/1-repos-per-language.svg" alt="Repos per Language" style="width: 100%;"/>
     </td>
     <!-- 中间空隙：8% -->
-    <td style="width: 8%; border: none;">&nbsp;</td>
+    <td style="width: 8%; border-style: none; border-width: 0;">&nbsp;</td>
     <!-- 右侧：46% -->
-    <td style="width: 46%; padding: 0; border: none;">
+    <td style="width: 46%; padding: 0; border-style: none; border-width: 0;">
       <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="width: 100%;"/>
     </td>
   </tr>
 </table>
 
 <!-- 3D 贡献图 (全宽) -->
-<div align="center" style="margin-top: 20px;">
+<div align="center" style="margin-top: 30px;">
   <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图" style="width: 100%; max-width: 800px;"/>
 </div>
 
