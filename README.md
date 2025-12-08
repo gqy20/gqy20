@@ -52,21 +52,6 @@
 
 ## 📊 GitHub 活动总览
 
-<table align="center">
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://github-readme-streak-stats.herokuapp.com/?user=gqy20&theme=vue-dark&hide_border=true&background=1F222E&stroke=2E8B57&ring=2E8B57&fire=FFA500&currStreakLabel=2E8B57">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=gqy20&theme=vue-dark&hide_border=true&background=1F222E&stroke=2E8B57&ring=2E8B57&fire=FFA500&currStreakLabel=2E8B57" alt="贡献连续记录" height="180em"/>
-      </a>
-    </td>
-    <td align="center" width="50%">
-      <a href="https://github-profile-trophy.vercel.app/?username=gqy20&theme=vue-dark&column=4&margin-w=15&margin-h=15&no-bg=true&no-frame=true">
-        <img src="https://github-profile-trophy.vercel.app/?username=gqy20&theme=vue-dark&column=4&margin-w=15&margin-h=15&no-bg=true&no-frame=true" alt="成就徽章" height="180em"/>
-      </a>
-    </td>
-  </tr>
-</table>
-
 <!-- 活动图谱 -->
 <div align="center">
   <a href="https://github-readme-activity-graph.vercel.app/graph?username=gqy20&theme=vue-dark&bg_color=1F222E&color=C9D1D9&line=2E8B57&point=FFA500&hide_border=true">
@@ -89,6 +74,13 @@
   </tr>
 </table>
 
+### 🐍 贡献活动
+<div align="center">
+  <img src="output/github-contribution-grid-snake.svg" alt="Snake Animation"/>
+</div>
+
+---
+
 ## 🌐 连接我
 
 <div align="center">
@@ -100,13 +92,6 @@
       <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
     </a>
   </p>
-</div>
-
----
-
-### 🐍 贡献活动
-<div align="center">
-  <img src="output/github-contribution-grid-snake.svg" alt="Snake Animation"/>
 </div>
 
 ---
