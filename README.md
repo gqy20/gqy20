@@ -76,15 +76,25 @@
 
 ### 🎯 Profile Summary
 
-<!-- 上层：Profile Details (全宽) -->
-<div align="center" style="margin-bottom: 15px;">
-  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 100%; max-width: 600px;"/>
+<!-- 上层：Profile Details (全宽，容器宽度600px) -->
+<div align="center" style="margin-bottom: 15px; width: 100%; max-width: 600px;">
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 100%;"/>
 </div>
 
-<!-- 下层：Top Language 和 Productive Time (并排，与上层宽度一致) -->
-<div align="center" style="display: flex; justify-content: center; gap: 20px; max-width: 600px; margin: 0 auto; width: 100%;">
-  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/1-repos-per-language.svg" alt="Repos per Language" style="width: 290px; flex: 0 0 auto;"/>
-  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="width: 290px; flex: 0 0 auto;"/>
+<!-- 下层：使用相同宽度容器，左侧46%，右侧46%，中间8%空隙 -->
+<div style="width: 100%; max-width: 600px; margin: 0 auto;">
+  <div style="display: flex; width: 100%;">
+    <!-- 左侧：46%，与上层左侧对齐 -->
+    <div style="width: 46%; margin-right: 4%;">
+      <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/1-repos-per-language.svg" alt="Repos per Language" style="width: 100%;"/>
+    </div>
+    <!-- 中间空隙：8% -->
+    <div style="width: 8%;"></div>
+    <!-- 右侧：46%，与上层右侧对齐 -->
+    <div style="width: 46%; margin-left: 4%;">
+      <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="width: 100%;"/>
+    </div>
+  </div>
 </div>
 
 <!-- 3D 贡献图 (全宽) -->
