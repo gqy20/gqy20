@@ -73,7 +73,7 @@ jobs:
 
               const projectCard = '<td align="center" width="33%">' +
                 '<a href="' + r.html_url + '">' +
-                  '<img src="https://github-readme-stats.vercel.app/api/pin/?username=gqy20&repo=' + r.name + '&theme=vue-dark&hide_border=true&show_owner=true" alt="' + r.name + '" width="100%"/>' +
+                  '<img src="https://github-readme-stats.vercel.app/api/pin/?username=gqy20&repo=' + r.name + '&theme=vue-dark&hide_border=true&show_owner=false&bg_color=1F222E&title_color=FFFFFF&text_color=C9D1D9&icon_color=2E8B57" alt="' + r.name + '" width="350"/>' +
                 '</a>' +
                 '<p>' +
                   '<strong>' + r.name + '</strong><br/>' +
