@@ -69,20 +69,19 @@ jobs:
               const skillIcons = icon ? `![${lang}](https://skillicons.dev/icons?i=${icon}&theme=light)` : '';
 
               const stars = r.stargazers_count || 0;
-              const description = r.description || `${r.name} 项目`;
+              // 限制描述长度
+              const description = (r.description || `${r.name} 项目`).substring(0, 50) + (r.description && r.description.length > 50 ? '...' : '');
 
               const projectCard = '<td align="center" width="33%">' +
                 '<a href="' + r.html_url + '">' +
-                  '<img src="https://github-readme-stats.vercel.app/api/pin/?username=gqy20&repo=' + r.name + '&theme=vue-dark&hide_border=true&show_owner=false&bg_color=1F222E&title_color=FFFFFF&text_color=C9D1D9&icon_color=2E8B57" alt="' + r.name + '" width="350"/>' +
+                  '<img src="https://github-readme-stats.vercel.app/api/pin/?username=gqy20&repo=' + r.name + '&theme=vue-dark&hide_border=true&show_owner=false&bg_color=1F222E&title_color=FFFFFF&text_color=C9D1D9&icon_color=2E8B57" alt="' + r.name + '" width="340"/>' +
                 '</a>' +
-                '<p>' +
-                  '<strong>' + r.name + '</strong><br/>' +
-                  '<em>' + description + '</em><br/>' +
-                  skillIcons + '<br/>' +
-                  '<code>⭐ ' + stars + ' | 🍴 ' + (r.forks_count || 0) + ' | ' + (lang || '多语言') + '</code><br/>' +
-                  '<small>📅 ' + new Date(r.updated_at).toLocaleDateString('zh-CN') + '</small>' +
-                  (r.homepage ? '<br/><a href="' + r.homepage + '" target="_blank">🏠 演示</a>' : '') +
-                '</p>' +
+                '<br/>' +
+                '<strong>' + r.name + '</strong><br/>' +
+                '<small>' + description + '</small><br/>' +
+                skillIcons + '<br/>' +
+                '<code>⭐ ' + stars + ' | 🍴 ' + (r.forks_count || 0) + ' | ' + (lang || '多语言') + '</code>' +
+                (r.homepage ? '<br/><a href="' + r.homepage + '" target="_blank">🏠 Demo</a>' : '') +
                 '</td>';
 
               return projectCard;
