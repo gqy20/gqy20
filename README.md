@@ -76,22 +76,15 @@
 
 ### 🎯 Profile Summary
 
-<!-- 使用 CSS Flexbox 实现更好的布局 -->
-<div style="display: flex; justify-content: center; align-items: flex-start; gap: 15px; max-width: 900px; margin: 0 auto; flex-wrap: wrap;">
-  <!-- 左侧：Repos per Language -->
-  <div style="flex: 0 0 auto; width: 280px;">
-    <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/1-repos-per-language.svg" alt="Repos per Language" style="width: 100%;"/>
-  </div>
+<!-- 上层：Profile Details (单独一行，较窄) -->
+<div align="center" style="margin-bottom: 15px;">
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 380px;"/>
+</div>
 
-  <!-- 中间：Profile Details -->
-  <div style="flex: 0 0 auto; width: 280px;">
-    <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 100%;"/>
-  </div>
-
-  <!-- 右侧：Productive Time -->
-  <div style="flex: 0 0 auto; width: 280px;">
-    <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="width: 100%;"/>
-  </div>
+<!-- 下层：Top Language 和 Productive Time (并排，总宽度与上面一致) -->
+<div align="center" style="display: flex; justify-content: center; gap: 15px; max-width: 380px; margin: 0 auto;">
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/1-repos-per-language.svg" alt="Repos per Language" style="width: 182.5px;"/>
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="width: 182.5px;"/>
 </div>
 
 <!-- 3D 贡献图 -->
