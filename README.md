@@ -85,6 +85,11 @@
   <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="margin-left: 10px;"/>
 </div>
 
+<!-- 3D 贡献图 -->
+<div align="center" style="margin-top: 20px;">
+  <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@latest/profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图"/>
+</div>
+
 ### 🐍 贡献活动
 <div align="center">
   <img src="output/github-contribution-grid-snake.svg" alt="Snake Animation"/>
