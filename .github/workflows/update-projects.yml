@@ -72,9 +72,9 @@ jobs:
               // 限制描述长度
               const description = (r.description || `${r.name} 项目`).substring(0, 50) + (r.description && r.description.length > 50 ? '...' : '');
 
-              const projectCard = '<td align="center" width="33%">' +
+              const projectCard = '<td align="center" width="50%">' +
                 '<a href="' + r.html_url + '">' +
-                  '<img src="https://github-readme-stats.vercel.app/api/pin/?username=gqy20&repo=' + r.name + '&theme=vue-dark&hide_border=true&show_owner=false&bg_color=1F222E&title_color=FFFFFF&text_color=C9D1D9&icon_color=2E8B57" alt="' + r.name + '" width="340"/>' +
+                  '<img src="https://github-readme-stats.vercel.app/api/pin/?username=gqy20&repo=' + r.name + '&theme=vue-dark&hide_border=true&show_owner=false&bg_color=1F222E&title_color=FFFFFF&text_color=C9D1D9&icon_color=2E8B57" alt="' + r.name + '" width="280"/>' +
                 '</a>' +
                 '<br/>' +
                 '<strong>' + r.name + '</strong><br/>' +
@@ -87,19 +87,17 @@ jobs:
               return projectCard;
             });
 
-            // 将项目分组，每三个一组
+            // 将项目分组，每两个一组（更好的移动端显示）
             const projectRows = [];
-            for (let i = 0; i < projectCards.length; i += 3) {
+            for (let i = 0; i < projectCards.length; i += 2) {
               const rowProjects = [
-                projectCards[i] || '<td></td>',
-                projectCards[i + 1] || '<td></td>',
-                projectCards[i + 2] || '<td></td>'
+                projectCards[i] || '<td width="50%"></td>',
+                projectCards[i + 1] || '<td width="50%"></td>'
               ];
               projectRows.push('<tr>\n' + rowProjects.join('\n') + '\n</tr>');
             }
 
-            // 构建表格
-            const projectsTable = '<table width="100%">\n' + projectRows.join('\n') + '\n</table>';
+            const projectsTable = '<table width="100%" style="table-layout: fixed;">\n' + projectRows.join('\n') + '\n</table>';
 
             // 读取README文件
             const fs = require('fs');
