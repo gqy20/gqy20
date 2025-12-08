@@ -32,3 +32,11 @@ jobs:
           UTC_OFFSET: 8
           # 自动推送更改
           AUTO_PUSH: "false"
+
+      - name: Commit & Push Profile Cards
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add profile-summary-card-output/*.svg
+          git commit -m "Update profile summary cards" || exit 0
+          git push
