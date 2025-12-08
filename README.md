@@ -8,9 +8,7 @@
 
 | 🧬 关于我 | 🛠️ 技术栈 |
 | --- | --- |
-| 我是一名进化基因组学硕士生，热衷于开发生态学和生物信息学工具，让科学研究更高效、更智能。 | **💻 编程语言**<br>![Python](https://skillicons.dev/icons?i=py,java,html,css,js,ts,r,linux)<br>**🤖 机器学习**<br>![ML](https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,numpy,pandas)<br>**🧬 工具**<br>![Tools](https://skillicons.dev/icons?i=docker,bash,git) |
-| **🔍 研究方向**：<br>- 进化基因组学与分子生态学<br>- AI驱动的生物数据分析<br>- 科研效率工具开发 | **生物信息学**<br>BLAST • BEDTools • NCBI API • Bioconductor |
-| **🌱 当前状态**：<br>- 📚 进化基因组学硕士在读<br>- 🚀 专注于AI与生物信息学交叉领域<br>- 💡 持续探索科研工具的创新应用 | |
+| 我是一名进化基因组学硕士生，热衷于开发生态学和生物信息学工具，让科学研究更高效、更智能。<br><br>**🔍 研究方向**：<br>- 进化基因组学与分子生态学<br>- AI驱动的生物数据分析<br>- 科研效率工具开发<br><br>**🌱 当前状态**：<br>- 📚 进化基因组学硕士在读<br>- 🚀 专注于AI与生物信息学交叉领域<br>- 💡 持续探索科研工具的创新应用 | **💻 编程语言**<br>![Python](https://skillicons.dev/icons?i=py,java,html,css,js,ts,r,linux)<br><br>**🤖 机器学习**<br>![ML](https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,numpy,pandas)<br><br>**🧬 生物信息学**<br>BLAST • BEDTools • NCBI API • Bioconductor<br><br>**🔧 工具**<br>![Tools](https://skillicons.dev/icons?i=docker,bash,git) |
 
 ## 🌟 精选项目
 
