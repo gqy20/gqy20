@@ -106,7 +106,7 @@
 
 ### 🐍 贡献活动
 <div align="center">
-  <img src="https://raw.githubusercontent.com/gqy20/gqy20/output/github-contribution-grid-snake.svg" alt="Snake Animation"/>
+  <img src="output/github-contribution-grid-snake.svg" alt="Snake Animation"/>
 </div>
 
 ---
