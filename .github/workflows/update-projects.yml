@@ -77,8 +77,8 @@ jobs:
             let readme = fs.readFileSync('README.md', 'utf8');
 
             // 查找并替换项目部分
-            const startMarker = '## 精选项目';
-            const endMarker = '## 技能栈';
+            const startMarker = '## 🌟 精选项目';
+            const endMarker = '## 🛠️ 技能栈';
 
             const startIndex = readme.indexOf(startMarker);
             const endIndex = readme.indexOf(endMarker);
