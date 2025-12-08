@@ -6,55 +6,49 @@
 
 ## 🧬 关于我 & 🛠️ 技术栈
 
-<table width="100%" style="border-collapse: collapse; margin-bottom: 30px;">
-  <tr>
-    <!-- 左侧：关于我 -->
-    <td width="65%" style="vertical-align: top; padding: 20px;">
-      <div>
-        <p style="font-size: 16px; margin-bottom: 15px;">
-          我是一名进化基因组学硕士生，热衷于开发生态学和生物信息学工具，让科学研究更高效、更智能。
-        </p>
+<div style="display: flex; align-items: flex-start; gap: 30px; margin-bottom: 30px;">
+  <!-- 左侧：关于我 -->
+  <div style="flex: 65%;">
+    <p style="font-size: 16px; margin-bottom: 15px;">
+      我是一名进化基因组学硕士生，热衷于开发生态学和生物信息学工具，让科学研究更高效、更智能。
+    </p>
 
-        <p style="margin-bottom: 10px;"><strong>🔍 研究方向：</strong></p>
-        <ul style="margin-left: 20px; margin-bottom: 15px;">
-          <li>进化基因组学与分子生态学</li>
-          <li>AI驱动的生物数据分析</li>
-          <li>科研效率工具开发</li>
-        </ul>
+    <p style="margin-bottom: 10px;"><strong>🔍 研究方向：</strong></p>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+      <li>进化基因组学与分子生态学</li>
+      <li>AI驱动的生物数据分析</li>
+      <li>科研效率工具开发</li>
+    </ul>
 
-        <p style="margin-bottom: 10px;"><strong>🌱 当前状态：</strong></p>
-        <ul style="margin-left: 20px;">
-          <li>📚 进化基因组学硕士在读</li>
-          <li>🚀 专注于AI与生物信息学交叉领域</li>
-          <li>💡 持续探索科研工具的创新应用</li>
-        </ul>
-      </div>
-    </td>
+    <p style="margin-bottom: 10px;"><strong>🌱 当前状态：</strong></p>
+    <ul style="margin-left: 20px;">
+      <li>📚 进化基因组学硕士在读</li>
+      <li>🚀 专注于AI与生物信息学交叉领域</li>
+      <li>💡 持续探索科研工具的创新应用</li>
+    </ul>
+  </div>
 
-    <!-- 右侧：技术栈 -->
-    <td width="35%" style="vertical-align: top; padding: 20px; text-align: center;">
-      <div>
-        <p style="margin-bottom: 10px;"><strong>💻 编程语言</strong></p>
-        <div style="margin-bottom: 15px;">
-          <img src="https://skillicons.dev/icons?i=py,java,html,css,js,ts,r,linux" alt="编程语言" style="width: 150px;"/>
-        </div>
+  <!-- 右侧：技术栈 -->
+  <div style="flex: 35%; text-align: center;">
+    <p style="margin-bottom: 10px;"><strong>💻 编程语言</strong></p>
+    <div style="margin-bottom: 15px;">
+      <img src="https://skillicons.dev/icons?i=py,java,html,css,js,ts,r,linux" alt="编程语言" style="width: 150px;"/>
+    </div>
 
-        <p style="margin-bottom: 10px;"><strong>🤖 机器学习</strong></p>
-        <div style="margin-bottom: 15px;">
-          <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,numpy,pandas" alt="机器学习" style="width: 150px;"/>
-        </div>
+    <p style="margin-bottom: 10px;"><strong>🤖 机器学习</strong></p>
+    <div style="margin-bottom: 15px;">
+      <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,numpy,pandas" alt="机器学习" style="width: 150px;"/>
+    </div>
 
-        <p style="margin-bottom: 10px;"><strong>🧬 生物信息学</strong></p>
-        <div style="margin-bottom: 10px;">
-          <img src="https://skillicons.dev/icons?i=docker,bash,git" alt="生物信息学工具" style="width: 100px;"/>
-        </div>
-        <div style="font-size: 12px; color: #8b949e;">
-          BLAST • BEDTools • NCBI API • Bioconductor
-        </div>
-      </div>
-    </td>
-  </tr>
-</table>
+    <p style="margin-bottom: 10px;"><strong>🧬 生物信息学</strong></p>
+    <div style="margin-bottom: 10px;">
+      <img src="https://skillicons.dev/icons?i=docker,bash,git" alt="生物信息学工具" style="width: 100px;"/>
+    </div>
+    <div style="font-size: 12px; color: #8b949e;">
+      BLAST • BEDTools • NCBI API • Bioconductor
+    </div>
+  </div>
+</div>
 
 ## 🌟 精选项目
 
