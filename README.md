@@ -4,19 +4,57 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=28&duration=4000&pause=1000&color=2E8B57&center=true&vCenter=true&multiline=true&width=600&height=100&lines=进化基因组学研究者;AI驱动的科研工具开发者" alt="Title"/>
 </div>
 
-## 🧬 关于我
+## 🧬 关于我 & 🛠️ 技术栈
 
-我是一名进化基因组学硕士生，热衷于开发生态学和生物信息学工具，让科学研究更高效、更智能。
+<table width="100%" style="border-collapse: collapse; margin-bottom: 30px;">
+  <tr>
+    <!-- 左侧：关于我 -->
+    <td width="65%" style="vertical-align: top; padding: 20px;">
+      <div>
+        <p style="font-size: 16px; margin-bottom: 15px;">
+          我是一名进化基因组学硕士生，热衷于开发生态学和生物信息学工具，让科学研究更高效、更智能。
+        </p>
 
-🔍 **研究方向**：
-- 进化基因组学与分子生态学
-- AI驱动的生物数据分析
-- 科研效率工具开发
+        <p style="margin-bottom: 10px;"><strong>🔍 研究方向：</strong></p>
+        <ul style="margin-left: 20px; margin-bottom: 15px;">
+          <li>进化基因组学与分子生态学</li>
+          <li>AI驱动的生物数据分析</li>
+          <li>科研效率工具开发</li>
+        </ul>
 
-🌱 **当前状态**：
-- 📚 进化基因组学硕士在读
-- 🚀 专注于AI与生物信息学交叉领域
-- 💡 持续探索科研工具的创新应用
+        <p style="margin-bottom: 10px;"><strong>🌱 当前状态：</strong></p>
+        <ul style="margin-left: 20px;">
+          <li>📚 进化基因组学硕士在读</li>
+          <li>🚀 专注于AI与生物信息学交叉领域</li>
+          <li>💡 持续探索科研工具的创新应用</li>
+        </ul>
+      </div>
+    </td>
+
+    <!-- 右侧：技术栈 -->
+    <td width="35%" style="vertical-align: top; padding: 20px; text-align: center;">
+      <div>
+        <p style="margin-bottom: 10px;"><strong>💻 编程语言</strong></p>
+        <div style="margin-bottom: 15px;">
+          <img src="https://skillicons.dev/icons?i=py,java,html,css,js,ts,r,linux" alt="编程语言" style="width: 150px;"/>
+        </div>
+
+        <p style="margin-bottom: 10px;"><strong>🤖 机器学习</strong></p>
+        <div style="margin-bottom: 15px;">
+          <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,numpy,pandas" alt="机器学习" style="width: 150px;"/>
+        </div>
+
+        <p style="margin-bottom: 10px;"><strong>🧬 生物信息学</strong></p>
+        <div style="margin-bottom: 10px;">
+          <img src="https://skillicons.dev/icons?i=docker,bash,git" alt="生物信息学工具" style="width: 100px;"/>
+        </div>
+        <div style="font-size: 12px; color: #8b949e;">
+          BLAST • BEDTools • NCBI API • Bioconductor
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
 
 ## 🌟 精选项目
 
@@ -37,33 +75,6 @@
 <td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/genome-mcp" style="color: #58a6ff; text-decoration: none;">genome-mcp</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">genome-mcp 项目</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=python" alt="Python" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/genome-mcp?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/genome-mcp?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/genome-mcp?style=flat-square" alt="Language" /></div><div style="margin-top: 10px;"><a href="https://pypi.org/project/genome-mcp/" target="_blank" style="color: #58a6ff;">🏠 查看演示</a></div></td>
 </tr>
 </table>
-
-## 🛠️ 技能栈
-
-### 编程语言 & 核心技能
-![Python Skills](https://skillicons.dev/icons?i=py,java,html,css,js,ts,r,linux,md&theme=light)
-
-### 机器学习 & 数据科学
-![ML Skills](https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,numpy,pandas&theme=light)
-
-### 生物信息学工具
-<p>
-  <img src="https://img.shields.io/badge/BLAST-006633?style=flat-square&logo=biotechnology&logoColor=white" alt="BLAST"/>
-  <img src="https://img.shields.io/badge/BEDTools-FF6F00?style=flat-square&logo=biotechnology&logoColor=white" alt="BEDTools"/>
-  <img src="https://img.shields.io/badge/NCBI_API-1DA1F2?style=flat-square&logo=api&logoColor=white" alt="NCBI API"/>
-  <img src="https://img.shields.io/badge/Bioconductor-3498DB?style=flat-square&logo=r&logoColor=white" alt="Bioconductor"/>
-</p>
-
-### 开发工具 & 平台
-<p>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-  <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" alt="VSCode"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"/>
-</p>
-
-### 正在学习
-![Learning Skills](https://skillicons.dev/icons?i=go,rust,aws,gcp&theme=light)
 
 ## 📊 GitHub 活动总览
 
