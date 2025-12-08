@@ -32,6 +32,44 @@ jobs:
           script: |
             const { owner, repo } = context.repo;
 
+            // 辅助函数：获取语言颜色
+            function getLanguageColor(lang) {
+              const colors = {
+                'Python': '3776ab',
+                'JavaScript': 'f7df1e',
+                'TypeScript': '3178c6',
+                'Java': '007396',
+                'HTML': 'e34f26',
+                'CSS': '1572b6',
+                'C++': '00599c',
+                'Go': '00add8',
+                'Rust': 'dea584',
+                'R': '276dc3',
+                'Shell': '89e051',
+                'Docker': '2496ed'
+              };
+              return colors[lang] || '6c757d';
+            }
+
+            // 辅助函数：获取语言logo
+            function getLanguageLogo(lang) {
+              const logos = {
+                'Python': 'python',
+                'JavaScript': 'javascript',
+                'TypeScript': 'typescript',
+                'Java': 'java',
+                'HTML': 'html5',
+                'CSS': 'css3',
+                'C++': 'cplusplus',
+                'Go': 'go',
+                'Rust': 'rust',
+                'R': 'r',
+                'Shell': 'powershell',
+                'Docker': 'docker'
+              };
+              return logos[lang] || 'default';
+            }
+
             // 获取用户的所有仓库（使用公开API）
             const repos = await github.rest.repos.listForUser({
               username: owner,
@@ -48,25 +86,11 @@ jobs:
 
             // 生成每个项目的卡片
             const projectCards = filteredRepos.map(r => {
-              // 生成技能图标
-              const languageIcons = {
-                'Python': 'py',
-                'JavaScript': 'js',
-                'TypeScript': 'ts',
-                'Java': 'java',
-                'HTML': 'html',
-                'CSS': 'css',
-                'C++': 'cpp',
-                'Go': 'go',
-                'Rust': 'rust',
-                'R': 'r',
-                'Shell': 'bash',
-                'Docker': 'docker'
-              };
-
               const lang = r.language || '';
-            const icon = languageIcons[lang] || lang.toLowerCase();
-            const skillIcons = icon ? `![${lang}](https://skillicons.dev/icons?i=${icon}&theme=light)` : '';
+            // 使用语言徽章代替 skillicons
+            const skillBadges = lang ?
+              `<img src="https://img.shields.io/badge/${encodeURIComponent(lang)}-${getLanguageColor(lang)}?style=flat-square&logo=${getLanguageLogo(lang)}" alt="${lang}" />` :
+              '<img src="https://img.shields.io/badge/multiple-6c757d?style=flat-square" alt="多语言" />';
 
             const stars = r.stargazers_count || 0;
             // 限制描述长度
@@ -76,7 +100,7 @@ jobs:
             const projectCard = '<td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;">' +
                 '<h3><a href="' + r.html_url + '" style="color: #58a6ff; text-decoration: none;">' + r.name + '</a></h3>' +
                 '<p style="color: #8b949e; font-size: 14px; margin: 10px 0;">' + description + '</p>' +
-                '<div style="margin: 10px 0;">' + skillIcons + '</div>' +
+                '<div style="margin: 10px 0;">' + skillBadges + '</div>' +
                 '<div style="margin: 10px 0;">' +
                   '<img src="https://img.shields.io/github/stars/gqy20/' + r.name + '?style=flat-square&logo=github" alt="Stars" /> ' +
                   '<img src="https://img.shields.io/github/forks/gqy20/' + r.name + '?style=flat-square&logo=github" alt="Forks" /> ' +
