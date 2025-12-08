@@ -20,8 +20,60 @@
 
 ## 🌟 精选项目
 
-<!-- 此部分由GitHub Actions自动同步，请勿手动编辑 -->
-<!-- 项目信息会从GitHub API自动获取并更新 -->
+<!-- 此部分由GitHub Actions自动更新，请勿手动编辑 -->
+<!-- 上次更新时间: 2025/12/8 18:25:06 -->
+
+### 🔗 [gqy20.github.io](https://github.com/gqy20/gqy20.github.io) - 个人网页
+> **Stars**: 1 | **Forks**: 0 | **语言**: HTML
+
+**项目特点**：
+- 最后更新：2025/12/8
+- [项目主页](https://home.gqy20.top/)
+
+---
+
+### 🔗 [article-mcp](https://github.com/gqy20/article-mcp) - 文献检索MCP
+> **Stars**: 9 | **Forks**: 3 | **语言**: Python
+
+**项目特点**：
+- 最后更新：2025/12/8
+- [项目主页](https://pypi.org/project/article-mcp/)
+
+---
+
+### 🔗 [genome-mcp](https://github.com/gqy20/genome-mcp) - genome-mcp 项目
+> **Stars**: 2 | **Forks**: 0 | **语言**: Python
+
+**项目特点**：
+- 最后更新：2025/12/8
+- [项目主页](https://pypi.org/project/genome-mcp/)
+
+---
+
+### 🔗 [pdfget](https://github.com/gqy20/pdfget) - PDFGet - 智能文献搜索与批量下载工具，支持高级检索和并发下载。现代化的Python文献管理工具，提供高效的搜索、下载和管理功能。
+> **Stars**: 0 | **Forks**: 0 | **语言**: Python
+
+**项目特点**：
+- 最后更新：2025/12/8
+- [项目主页](https://pypi.org/project/pdfget/)
+
+---
+
+### 🔗 [biotools_agent](https://github.com/gqy20/biotools_agent) - BioTools Agent - 生物信息学工具自动分析系统，使用AI分析GitHub生物信息学项目并生成可视化文档
+> **Stars**: 0 | **Forks**: 0 | **语言**: Python
+
+**项目特点**：
+- 最后更新：2025/11/22
+
+
+---
+
+### 🔗 [SLAIS](https://github.com/gqy20/SLAIS) - SLAIS (Smart Literature Analysis and Insight System) 是一个基于人工智能的PDF文献智能分析系统，专为科研人员、学生和学术从业者设计。系统能够自动化地从PDF格式的学术文献中提取关键信息、生成深刻洞察并构建结构化报告，大幅提升文献阅读和研究效率。
+> **Stars**: 5 | **Forks**: 1 | **语言**: Python
+
+**项目特点**：
+- 最后更新：2025/11/3
+
 
 ## 🛠️ 技能栈
 
