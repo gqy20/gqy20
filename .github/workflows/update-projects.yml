@@ -65,23 +65,24 @@ jobs:
               };
 
               const lang = r.language || '';
-              const icon = languageIcons[lang] || lang.toLowerCase();
-              const skillIcons = icon ? `![${lang}](https://skillicons.dev/icons?i=${icon}&theme=light)` : '';
+            const icon = languageIcons[lang] || lang.toLowerCase();
+            const skillIcons = icon ? `![${lang}](https://skillicons.dev/icons?i=${icon}&theme=light)` : '';
 
-              const stars = r.stargazers_count || 0;
-              // 限制描述长度
-              const description = (r.description || `${r.name} 项目`).substring(0, 50) + (r.description && r.description.length > 50 ? '...' : '');
+            const stars = r.stargazers_count || 0;
+            // 限制描述长度
+            const description = (r.description || `${r.name} 项目`).substring(0, 50) + (r.description && r.description.length > 50 ? '...' : '');
 
-              const projectCard = '<td align="center" width="50%">' +
-                '<a href="' + r.html_url + '">' +
-                  '<img src="https://github-readme-stats.vercel.app/api/pin/?username=gqy20&repo=' + r.name + '&theme=vue-dark&hide_border=true&show_owner=false&bg_color=1F222E&title_color=FFFFFF&text_color=C9D1D9&icon_color=2E8B57" alt="' + r.name + '" width="280"/>' +
-                '</a>' +
-                '<br/>' +
-                '<strong>' + r.name + '</strong><br/>' +
-                '<small>' + description + '</small><br/>' +
-                skillIcons + '<br/>' +
-                '<code>⭐ ' + stars + ' | 🍴 ' + (r.forks_count || 0) + ' | ' + (lang || '多语言') + '</code>' +
-                (r.homepage ? '<br/><a href="' + r.homepage + '" target="_blank">🏠 Demo</a>' : '') +
+            // 使用 GitHub Shields 徽章代替图片卡片
+            const projectCard = '<td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;">' +
+                '<h3><a href="' + r.html_url + '" style="color: #58a6ff; text-decoration: none;">' + r.name + '</a></h3>' +
+                '<p style="color: #8b949e; font-size: 14px; margin: 10px 0;">' + description + '</p>' +
+                '<div style="margin: 10px 0;">' + skillIcons + '</div>' +
+                '<div style="margin: 10px 0;">' +
+                  '<img src="https://img.shields.io/github/stars/gqy20/' + r.name + '?style=flat-square&logo=github" alt="Stars" /> ' +
+                  '<img src="https://img.shields.io/github/forks/gqy20/' + r.name + '?style=flat-square&logo=github" alt="Forks" /> ' +
+                  '<img src="https://img.shields.io/github/languages/top/gqy20/' + r.name + '?style=flat-square" alt="Language" />' +
+                '</div>' +
+                (r.homepage ? '<div style="margin-top: 10px;"><a href="' + r.homepage + '" target="_blank" style="color: #58a6ff;">🏠 查看演示</a></div>' : '') +
                 '</td>';
 
               return projectCard;
