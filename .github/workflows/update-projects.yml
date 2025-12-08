@@ -71,19 +71,21 @@ jobs:
               const stars = r.stargazers_count || 0;
               const description = r.description || `${r.name} 项目`;
 
-              return `<td align="center" width="33%">
-<a href="${r.html_url}">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=gqy20&repo=${r.name}&theme=vue-dark&hide_border=true&show_owner=true" alt="${r.name}" width="100%"/>
-</a>
-<p>
-<strong>${r.name}</strong><br>
-<em>${description}</em><br>
-${skillIcons}<br>
-<code>⭐ ${stars} | 🍴 ${r.forks_count || 0} | ${lang || '多语言'}</code><br>
-<small>📅 ${new Date(r.updated_at).toLocaleDateString('zh-CN')}</small>
-${r.homepage ? `<br><a href="${r.homepage}" target="_blank">🏠 演示</a>` : ''}
-</p>
-</td>`;
+              const projectCard = '<td align="center" width="33%">' +
+                '<a href="' + r.html_url + '">' +
+                  '<img src="https://github-readme-stats.vercel.app/api/pin/?username=gqy20&repo=' + r.name + '&theme=vue-dark&hide_border=true&show_owner=true" alt="' + r.name + '" width="100%"/>' +
+                '</a>' +
+                '<p>' +
+                  '<strong>' + r.name + '</strong><br/>' +
+                  '<em>' + description + '</em><br/>' +
+                  skillIcons + '<br/>' +
+                  '<code>⭐ ' + stars + ' | 🍴 ' + (r.forks_count || 0) + ' | ' + (lang || '多语言') + '</code><br/>' +
+                  '<small>📅 ' + new Date(r.updated_at).toLocaleDateString('zh-CN') + '</small>' +
+                  (r.homepage ? '<br/><a href="' + r.homepage + '" target="_blank">🏠 演示</a>' : '') +
+                '</p>' +
+                '</td>';
+
+              return projectCard;
             });
 
             // 将项目分组，每三个一组
@@ -94,11 +96,11 @@ ${r.homepage ? `<br><a href="${r.homepage}" target="_blank">🏠 演示</a>` : '
                 projectCards[i + 1] || '<td></td>',
                 projectCards[i + 2] || '<td></td>'
               ];
-              projectRows.push(`<tr>\n${rowProjects.join('\n')}\n</tr>`);
+              projectRows.push('<tr>\n' + rowProjects.join('\n') + '\n</tr>');
             }
 
             // 构建表格
-            const projectsTable = `<table width="100%">\n${projectRows.join('\n')}\n</table>`;
+            const projectsTable = '<table width="100%">\n' + projectRows.join('\n') + '\n</table>';
 
             // 读取README文件
             const fs = require('fs');
@@ -116,18 +118,18 @@ ${r.homepage ? `<br><a href="${r.homepage}" target="_blank">🏠 演示</a>` : '
               const afterProjects = readme.substring(endIndex);
 
               // 构建新的项目部分
-              const projectsSection = startMarker + "\n\n" +
-                "<!-- 此部分由GitHub Actions自动更新，请勿手动编辑 -->\n" +
-                "<!-- 上次更新时间: " + new Date().toLocaleString('zh-CN') + " -->\n\n" +
-                projectsTable + "\n\n";
+              const projectsSection = startMarker + '\n\n' +
+                '<!-- 此部分由GitHub Actions自动更新，请勿手动编辑 -->\n' +
+                '<!-- 上次更新时间: ' + new Date().toLocaleString('zh-CN') + ' -->\n\n' +
+                projectsTable + '\n\n';
 
               // 写入新内容
               const newReadme = beforeProjects + projectsSection + afterProjects;
               fs.writeFileSync('README.md', newReadme);
 
-              console.log("成功更新了 " + filteredRepos.length + " 个项目的信息");
+              console.log('成功更新了 ' + filteredRepos.length + ' 个项目的信息');
             } else {
-              console.error("无法找到项目部分的标记");
+              console.error('无法找到项目部分的标记');
               process.exit(1);
             }
 
