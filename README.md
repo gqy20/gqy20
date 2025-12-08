@@ -76,20 +76,20 @@
 
 ### 🎯 Profile Summary
 
-<!-- 上层：Profile Details (单独一行，较窄) -->
+<!-- 上层：Profile Details (全宽) -->
 <div align="center" style="margin-bottom: 15px;">
-  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 380px;"/>
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 100%; max-width: 600px;"/>
 </div>
 
-<!-- 下层：Top Language 和 Productive Time (并排，总宽度与上面一致) -->
-<div align="center" style="display: flex; justify-content: center; gap: 15px; max-width: 380px; margin: 0 auto;">
-  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/1-repos-per-language.svg" alt="Repos per Language" style="width: 182.5px;"/>
-  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="width: 182.5px;"/>
+<!-- 下层：Top Language 和 Productive Time (并排，与上层宽度一致) -->
+<div align="center" style="display: flex; justify-content: center; gap: 20px; max-width: 600px; margin: 0 auto; width: 100%;">
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/1-repos-per-language.svg" alt="Repos per Language" style="width: 290px; flex: 0 0 auto;"/>
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="width: 290px; flex: 0 0 auto;"/>
 </div>
 
-<!-- 3D 贡献图 -->
+<!-- 3D 贡献图 (全宽) -->
 <div align="center" style="margin-top: 20px;">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图"/>
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图" style="width: 100%; max-width: 800px;"/>
 </div>
 
 ### 🐍 贡献活动
