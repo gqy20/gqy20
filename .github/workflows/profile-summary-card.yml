@@ -1,9 +1,9 @@
 name: Generate Profile Summary Cards
 
 on:
-  # 每天北京时间凌晨3点运行
+  # 每天北京时间凌晨3点10分运行（避免与其他工作流冲突）
   schedule:
-    - cron: '0 19 * * *'
+    - cron: '10 19 * * *'
   # 手动触发
   workflow_dispatch:
   # 推送到main分支时触发
@@ -37,7 +37,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git add profile-summary-card-output/*.svg
           git commit -m "Update profile summary cards" || exit 0
-          # 等待一下避免与其他workflow冲突
-          sleep 5
+          # 拉取远程更新以避免冲突
           git pull --rebase || true
           git push
