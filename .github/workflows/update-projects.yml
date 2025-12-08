@@ -44,7 +44,7 @@ jobs:
             // 过滤并处理项目
             const filteredRepos = repos.data
               .filter(r => !r.fork && r.name !== repo)
-              .slice(0, 9); // 取9个项目，每行3个
+              .slice(0, 6); // 取6个项目，每行3个
 
             // 生成每个项目的卡片
             const projectCards = filteredRepos.map(r => {
@@ -66,7 +66,7 @@ jobs:
 
               const lang = r.language || '';
               const icon = languageIcons[lang] || lang.toLowerCase();
-              const skillIcons = icon ? `![${lang}](https://skillicons.dev/icons?i=${icon}&theme=light&perline=1)` : '';
+              const skillIcons = icon ? `![${lang}](https://skillicons.dev/icons?i=${icon}&theme=light)` : '';
 
               const stars = r.stargazers_count || 0;
               const description = r.description || `${r.name} 项目`;
