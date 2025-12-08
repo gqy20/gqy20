@@ -96,7 +96,7 @@
 
 <!-- 3D 贡献图 -->
 <div align="center" style="margin-top: 20px;">
-  <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@latest/profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图"/>
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图"/>
 </div>
 
 ### 🐍 贡献活动
