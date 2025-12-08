@@ -55,23 +55,23 @@
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <img height="180em" src="https://github-readme-stats.vercel.app/api?username=gqy20&show_icons=true&theme=vue-dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=1F222E&title_color=2E8B57&icon_color=2E8B57&text_color=C9D1D9"/>
+      <a href="https://github-readme-streak-stats.herokuapp.com/?user=gqy20&theme=vue-dark&hide_border=true&background=1F222E&stroke=2E8B57&ring=2E8B57&fire=FFA500&currStreakLabel=2E8B57">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=gqy20&theme=vue-dark&hide_border=true&background=1F222E&stroke=2E8B57&ring=2E8B57&fire=FFA500&currStreakLabel=2E8B57" alt="贡献连续记录" height="180em"/>
+      </a>
     </td>
     <td align="center" width="50%">
-      <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gqy20&layout=compact&theme=vue-dark&hide_border=true&bg_color=1F222E&title_color=2E8B57&text_color=C9D1D9&langs_count=6"/>
+      <a href="https://github-profile-trophy.vercel.app/?username=gqy20&theme=vue-dark&column=4&margin-w=15&margin-h=15&no-bg=true&no-frame=true">
+        <img src="https://github-profile-trophy.vercel.app/?username=gqy20&theme=vue-dark&column=4&margin-w=15&margin-h=15&no-bg=true&no-frame=true" alt="成就徽章" height="180em"/>
+      </a>
     </td>
   </tr>
 </table>
 
-<!-- 连续贡献记录 -->
+<!-- 活动图谱 -->
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=gqy20&theme=vue-dark&hide_border=true&background=1F222E&stroke=2E8B57&ring=2E8B57&fire=FFA500&currStreakLabel=2E8B57"/>
-</div>
-
----
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gqy20&theme=vue-dark&bg_color=1F222E&color=C9D1D9&line=2E8B57&point=FFA500&hide_border=true"/>
+  <a href="https://github-readme-activity-graph.vercel.app/graph?username=gqy20&theme=vue-dark&bg_color=1F222E&color=C9D1D9&line=2E8B57&point=FFA500&hide_border=true">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=gqy20&theme=vue-dark&bg_color=1F222E&color=C9D1D9&line=2E8B57&point=FFA500&hide_border=true" alt="活动图谱"/>
+  </a>
 </div>
 
 ### 🎯 Profile Summary
