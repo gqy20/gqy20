@@ -18,12 +18,12 @@ jobs:
     name: 更新项目列表
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6.0.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get repository list and update README
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -70,13 +70,13 @@ jobs:
                 else if (stars >= 5) starBadge = '✨ ★★★☆☆';
 
                 return `### 🔗 [${r.name}](${r.html_url}) - ${r.description || r.name + ' 项目'}
-> 📊 **Stars**: ${stars} | **Forks**: ${r.forks_count || 0} | **语言**: ${lang || '多语言'}
+> **Stars**: ${stars} | **Forks**: ${r.forks_count || 0} | **语言**: ${lang || '多语言'}
 
 ${skillIcons}
 
-🔥 **项目特点**：
+**项目特点**：
 - 最后更新：${new Date(r.updated_at).toLocaleDateString('zh-CN')}
-${r.homepage ? `- 🌐 [项目主页](${r.homepage})` : ''}`;
+${r.homepage ? `- [项目主页](${r.homepage})` : ''}`;
               });
 
             // 读取README文件

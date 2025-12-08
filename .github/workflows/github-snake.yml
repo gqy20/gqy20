@@ -16,10 +16,10 @@ jobs:
     name: Generate Snake Animation
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6.0.1
 
       - name: Generate GitHub Snake Animation
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk/svg-only@v3.4.1
         id: snake-gif
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -30,7 +30,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v4.0.0
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

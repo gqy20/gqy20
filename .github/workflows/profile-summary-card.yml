@@ -16,10 +16,10 @@ jobs:
     name: Generate Profile Summary Cards
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6.0.1
 
       - name: Generate Profile Summary Cards
-        uses: vn7n24fzkq/github-profile-summary-cards@release-1
+        uses: vn7n24fzkq/github-profile-summary-cards@v0.7.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -34,7 +34,7 @@ jobs:
           UTC_OFFSET: 8
 
       - name: Commit & Push
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7.0.0
         with:
           commit_message: "🎨 更新Profile统计卡片"
           branch: ${{ github.ref }}
