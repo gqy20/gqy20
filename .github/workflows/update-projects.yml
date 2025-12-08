@@ -1,0 +1,128 @@
+name: Update Projects List
+
+on:
+  # 每天北京时间凌晨2点运行
+  schedule:
+    - cron: '0 18 * * *'
+  # 手动触发
+  workflow_dispatch:
+  # 当有新push时触发（可选）
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/update-projects.yml'
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+    name: 更新项目列表
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get repository list and update README
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+
+            // 获取用户的所有仓库
+            const repos = await github.rest.repos.listForAuthenticatedUser({
+              type: 'owner',
+              sort: 'updated',
+              direction: 'desc',
+              per_page: 100
+            });
+
+            // 过滤并处理项目
+            const projects = repos.data
+              .filter(r => !r.fork && r.name !== repo) // 排除fork和当前仓库
+              .slice(0, 6) // 只取前6个最新的项目
+              .map(r => {
+                // 生成技能图标
+                const languageIcons = {
+                  'Python': 'py',
+                  'JavaScript': 'js',
+                  'TypeScript': 'ts',
+                  'Java': 'java',
+                  'HTML': 'html',
+                  'CSS': 'css',
+                  'C++': 'cpp',
+                  'Go': 'go',
+                  'Rust': 'rust',
+                  'R': 'r',
+                  'Shell': 'bash',
+                  'Docker': 'docker'
+                };
+
+                const lang = r.language || '';
+                const icon = languageIcons[lang] || lang.toLowerCase();
+                const skillIcons = icon ? `![${lang}](https://skillicons.dev/icons?i=${icon}&theme=light)` : '';
+
+                // 生成star等级
+                const stars = r.stargazers_count || 0;
+                let starBadge = '⭐ ★★★☆☆';
+                if (stars >= 100) starBadge = '🏆 ★★★★★';
+                else if (stars >= 10) starBadge = '🌟 ★★★★☆';
+                else if (stars >= 5) starBadge = '✨ ★★★☆☆';
+
+                return `### 🔗 [${r.name}](${r.html_url}) - ${r.description || r.name + ' 项目'}
+> 📊 **Stars**: ${stars} | **Forks**: ${r.forks_count || 0} | **语言**: ${lang || '多语言'}
+
+${skillIcons}
+
+🔥 **项目特点**：
+- 最后更新：${new Date(r.updated_at).toLocaleDateString('zh-CN')}
+${r.homepage ? `- 🌐 [项目主页](${r.homepage})` : ''}`;
+              });
+
+            // 读取README文件
+            const fs = require('fs');
+            let readme = fs.readFileSync('README.md', 'utf8');
+
+            // 查找并替换项目部分
+            const startMarker = '## 🌟 精选项目';
+            const endMarker = '## 🛠️ 技能栈';
+
+            const startIndex = readme.indexOf(startMarker);
+            const endIndex = readme.indexOf(endMarker);
+
+            if (startIndex !== -1 && endIndex !== -1) {
+              const beforeProjects = readme.substring(0, startIndex);
+              const afterProjects = readme.substring(endIndex);
+
+              // 构建新的项目部分
+              const projectsSection = `${startMarker}
+
+<!-- 此部分由GitHub Actions自动更新，请勿手动编辑 -->
+<!-- 上次更新时间: ${new Date().toLocaleString('zh-CN')} -->
+
+${projects.join('\n\n---\n\n')}
+
+`;
+
+              // 写入新内容
+              const newReadme = beforeProjects + projectsSection + afterProjects;
+              fs.writeFileSync('README.md', newReadme);
+
+              console.log(`✅ 成功更新了 ${projects.length} 个项目的信息`);
+            } else {
+              console.error('❌ 无法找到项目部分的标记');
+              process.exit(1);
+            }
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          # 只有当有变更时才提交
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🔄 自动同步项目信息"
+            git push
+          fi

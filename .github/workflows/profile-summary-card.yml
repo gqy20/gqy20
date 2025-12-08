@@ -1,0 +1,41 @@
+name: Generate Profile Summary Cards
+
+on:
+  # 每天北京时间凌晨3点运行
+  schedule:
+    - cron: '0 19 * * *'
+  # 手动触发
+  workflow_dispatch:
+  # 推送到main分支时触发
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Generate Profile Summary Cards
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate Profile Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release-1-ext
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          # 使用更现代的主题配色，适合生物信息学领域
+          THEME: vue_dark
+          # 排除私人仓库
+          EXCLUDE: "private"
+          # 显示统计详情
+          SHOW_DETAILS: "true"
+          # 使用UTC时间
+          UTC_OFFSET: 8
+
+      - name: Commit & Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🎨 更新Profile统计卡片"
+          branch: ${{ github.ref }}
+          file_pattern: profile-summary-card-output/*.svg
