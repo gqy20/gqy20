@@ -13,7 +13,7 @@
 ## 🌟 精选项目
 
 <!-- 此部分由GitHub Actions自动更新，请勿手动编辑 -->
-<!-- 上次更新时间: 2026/1/3 18:29:12 -->
+<!-- 上次更新时间: 2026/1/4 18:29:31 -->
 
 <table width="100%" style="table-layout: fixed;">
 <tr>
@@ -25,8 +25,8 @@
 <td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/mind" style="color: #58a6ff; text-decoration: none;">mind</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">AI agents that collaborate to spark innovation</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=python" alt="Python" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/mind?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/mind?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/mind?style=flat-square" alt="Language" /></div></td>
 </tr>
 <tr>
+<td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/article-mcp" style="color: #58a6ff; text-decoration: none;">article-mcp</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">文献检索MCP</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=python" alt="Python" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/article-mcp?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/article-mcp?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/article-mcp?style=flat-square" alt="Language" /></div><div style="margin-top: 10px;"><a href="https://pypi.org/project/article-mcp/" target="_blank" style="color: #58a6ff;">🏠 查看演示</a></div></td>
 <td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/cc_plugins" style="color: #58a6ff; text-decoration: none;">cc_plugins</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">Specialized collection of development plugins desi...</p><div style="margin: 10px 0;"></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/cc_plugins?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/cc_plugins?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/cc_plugins?style=flat-square" alt="Language" /></div></td>
-<td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/mcp_agent" style="color: #58a6ff; text-decoration: none;">mcp_agent</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">mcp_agent 项目</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=python" alt="Python" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/mcp_agent?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/mcp_agent?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/mcp_agent?style=flat-square" alt="Language" /></div></td>
 </tr>
 </table>
 
