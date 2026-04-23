@@ -26,6 +26,8 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
           # 排除私人仓库
           EXCLUDE: "private"
+          # 只生成指定主题，减少冗余
+          THEME: vue, github, github_dark, tokyonight, dracula
           # 使用UTC时间
           UTC_OFFSET: 8
           # 自动推送更改
