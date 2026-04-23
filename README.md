@@ -1,14 +1,14 @@
 # 👋 你好！我是 gqy20
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=28&duration=4000&pause=1000&color=2E8B57&center=true&vCenter=true&multiline=true&width=600&height=100&lines=进化基因组学研究者;AI驱动的科研工具开发者" alt="Title"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=28&duration=4000&pause=1000&color=2E8B57&center=true&vCenter=true&multiline=true&width=600&height=100&lines=AI驱动工具开发者;开源爱好者" alt="Title"/>
 </div>
 
-## 🧬 关于我 & 🛠️ 技术栈
+## 👨‍💻 关于我 & 🛠️ 技术栈
 
-| 🧬 关于我 | 🛠️ 技术栈 |
+| 👨‍💻 关于我 | 🛠️ 技术栈 |
 | --- | --- |
-| 我是一名进化基因组学硕士生，热衷于开发生态学和生物信息学工具，让科学研究更高效、更智能。<br><br>**🔍 研究方向**：<br>- 进化基因组学与分子生态学<br>- AI驱动的生物数据分析<br>- 科研效率工具开发<br><br>**🌱 当前状态**：<br>- 📚 进化基因组学硕士在读<br>- 🚀 专注于AI与生物信息学交叉领域<br>- 💡 持续探索科研工具的创新应用 | **💻 编程语言**<br>![Python](https://skillicons.dev/icons?i=py,java,html,css,js,ts,r,linux)<br><br>**🤖 机器学习**<br>![ML](https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,numpy,pandas)<br><br>**🧬 生物信息学**<br>BLAST • BEDTools • NCBI API • Bioconductor<br><br>**🔧 工具**<br>![Tools](https://skillicons.dev/icons?i=docker,bash,git) |
+| 我是一名开发者，热衷于构建 AI 驱动的工具和开源项目，让工作更高效、更智能。<br><br>**🔍 关注领域**：<br>- AI 工具与应用开发<br>- 开源项目与开发者体验<br>- 效率工具与自动化<br><br>**🌱 当前状态**：<br>- 🚀 专注于 AI 与工具开发<br>- 💡 持续探索创新应用 | **💻 编程语言**<br>![Python](https://skillicons.dev/icons?i=py,java,html,css,js,ts,r,linux)<br><br>**🤖 机器学习**<br>![ML](https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,numpy,pandas)<br><br>**🔧 工具**<br>![Tools](https://skillicons.dev/icons?i=docker,bash,git) |
 
 ## 🌟 精选项目
 
@@ -21,11 +21,11 @@
 <td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/homebrew-tap" style="color: #58a6ff; text-decoration: none;">homebrew-tap</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">Homebrew tap for gqy20 command-line tools</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=ruby" alt="Ruby" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/homebrew-tap?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/homebrew-tap?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/homebrew-tap?style=flat-square" alt="Language" /></div></td>
 </tr>
 <tr>
-<td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/zotero_cli" style="color: #58a6ff; text-decoration: none;">zotero_cli</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">zotero_cli 项目</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=go" alt="Go" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/zotero_cli?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/zotero_cli?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/zotero_cli?style=flat-square" alt="Language" /></div></td>
+<td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/zotero_cli" style="color: #58a6ff; text-decoration: none;">zotero_cli</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">AI 原生 Zotero 命行工具 — 让 AI 直接操作你的文献库</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=go" alt="Go" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/zotero_cli?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/zotero_cli?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/zotero_cli?style=flat-square" alt="Language" /></div></td>
 <td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/TrendPluse" style="color: #58a6ff; text-decoration: none;">TrendPluse</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">GitHub 趋势智能分析工具 - 基于 AI 的开源项目趋势洞察</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=python" alt="Python" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/TrendPluse?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/TrendPluse?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/TrendPluse?style=flat-square" alt="Language" /></div><div style="margin-top: 10px;"><a href="https://home.gqy20.top/TrendPluse/" target="_blank" style="color: #58a6ff;">🏠 查看演示</a></div></td>
 </tr>
 <tr>
-<td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/manim-agent" style="color: #58a6ff; text-decoration: none;">manim-agent</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">manim-agent 项目</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=python" alt="Python" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/manim-agent?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/manim-agent?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/manim-agent?style=flat-square" alt="Language" /></div></td>
+<td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/manim-agent" style="color: #58a6ff; text-decoration: none;">manim-agent</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">AI 数学动画视频自动生成 — 自然语言输入，端到端产出成品</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=python" alt="Python" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/manim-agent?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/manim-agent?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/manim-agent?style=flat-square" alt="Language" /></div></td>
 <td align="center" width="50%" style="padding: 15px; border: 1px solid #30363d; border-radius: 6px; margin: 5px; background-color: #0d1117;"><h3><a href="https://github.com/gqy20/TrumanWorld" style="color: #58a6ff; text-decoration: none;">TrumanWorld</a></h3><p style="color: #8b949e; font-size: 14px; margin: 10px 0;">🎭 楚门的世界 AI 版 | 在这个小镇里，AI 居民们不知道自己是 AI。你是导演，只能观察和创...</p><div style="margin: 10px 0;"><img src="https://skillicons.dev/icons?i=python" alt="Python" /></div><div style="margin: 10px 0;"><img src="https://img.shields.io/github/stars/gqy20/TrumanWorld?style=flat-square&logo=github" alt="Stars" /> <img src="https://img.shields.io/github/forks/gqy20/TrumanWorld?style=flat-square&logo=github" alt="Forks" /> <img src="https://img.shields.io/github/languages/top/gqy20/TrumanWorld?style=flat-square" alt="Language" /></div></td>
 </tr>
 </table>
@@ -94,11 +94,20 @@
     <a href="https://github.com/gqy20">
       <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
     </a>
+    <a href="https://space.bilibili.com/500302320">
+      <img src="https://img.shields.io/badge/Bilibili-00A1D6?style=flat-square&logo=bilibili&logoColor=white" alt="Bilibili"/>
+    </a>
+    <a href="https://gitee.com/gqy20">
+      <img src="https://img.shields.io/badge/Gitee-C71D23?style=flat-square&logo=gitee&logoColor=white" alt="Gitee"/>
+    </a>
+    <a href="https://www.modelscope.cn/profile/gqy2025">
+      <img src="https://img.shields.io/badge/ModelScope-2DBE91?style=flat-square&logo=modelscope&logoColor=white" alt="ModelScope"/>
+    </a>
   </p>
 </div>
 
 ---
 
 <div align="center">
-  <sub>🌱 持续学习，持续创造 | 用代码探索生命的奥秘</sub>
+  <sub>🌱 持续学习，持续创造</sub>
 </div>
