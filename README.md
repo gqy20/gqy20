@@ -4,11 +4,16 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=28&duration=4000&pause=1000&color=2E8B57&center=true&vCenter=true&multiline=true&width=600&height=100&lines=AI驱动工具开发者;开源爱好者" alt="Title"/>
 </div>
 
-## 👨‍💻 关于我 & 🛠️ 技术栈
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=py,go,ts,html,css,js,python,docker,bash,git,linux" alt="Tech Stack"/>
+</div>
 
-| 👨‍💻 关于我 | 🛠️ 技术栈 |
-| --- | --- |
-| 我是一名开发者，热衷于构建 AI 驱动的工具和开源项目，让工作更高效、更智能。<br><br>**🔍 关注领域**：<br>- AI 工具与应用开发<br>- 开源项目与开发者体验<br>- 效率工具与自动化<br><br>**🌱 当前状态**：<br>- 🚀 专注于 AI 与工具开发<br>- 💡 持续探索创新应用 | **💻 编程语言**<br>![Python](https://skillicons.dev/icons?i=py,java,html,css,js,ts,r,linux)<br><br>**🤖 机器学习**<br>![ML](https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,numpy,pandas)<br><br>**🔧 工具**<br>![Tools](https://skillicons.dev/icons?i=docker,bash,git) |
+<p align="center">
+  <img src="https://img.shields.io/badge/AI工具开发-2E8B57?style=flat-square" />
+  <img src="https://img.shields.io/badge/开源项目-FF6B6B?style=flat-square" />
+  <img src="https://img.shields.io/badge/效率自动化-4ECDC4?style=flat-square" />
+  <img src="https://img.shields.io/badge/ML/数据科学-45B7D1?style=flat-square" />
+</p>
 
 ## 🌟 精选项目
 
@@ -30,49 +35,23 @@
 </tr>
 </table>
 
-### 🎯 Profile Summary
+### 📊 Profile Summary
 
-<!-- 使用表格布局确保并排显示 -->
-<table align="center" style="width: 100%; max-width: 700px; border-collapse: collapse; border-style: none; border-width: 0; margin-bottom: 15px; border-spacing: 0;">
-  <tr>
-    <td colspan="3" align="center" style="padding: 0; border-style: none; border-width: 0;">
-      <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 100%;"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/0-profile-details.svg" alt="Profile Details" style="width: 100%; max-width: 700px;"/>
+</div>
 
-<table align="center" style="width: 100%; max-width: 700px; border-collapse: collapse; border-style: none; border-width: 0; border-spacing: 0;">
-  <tr>
-    <!-- 左侧：46% -->
-    <td style="width: 46%; padding: 0; border-style: none; border-width: 0;">
-      <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/1-repos-per-language.svg" alt="Repos per Language" style="width: 100%;"/>
-    </td>
-    <!-- 中间空隙：8% -->
-    <td style="width: 8%; border-style: none; border-width: 0;">&nbsp;</td>
-    <!-- 右侧：46% -->
-    <td style="width: 46%; padding: 0; border-style: none; border-width: 0;">
-      <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="width: 100%;"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/1-repos-per-language.svg" alt="Repos per Language" style="width: 48%; max-width: 340px; display: inline-block;"/>
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/4-productive-time.svg" alt="Productive Time" style="width: 48%; max-width: 340px; display: inline-block;"/>
+</div>
 
-<!-- 第三行：另外两张卡片 -->
-<table align="center" style="width: 100%; max-width: 700px; border-collapse: collapse; border-style: none; border-width: 0; border-spacing: 0; margin-top: 15px;">
-  <tr>
-    <!-- 左侧：46% -->
-    <td style="width: 46%; padding: 0; border-style: none; border-width: 0;">
-      <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/2-most-commit-language.svg" alt="Most Commit Language" style="width: 100%;"/>
-    </td>
-    <!-- 中间空隙：8% -->
-    <td style="width: 8%; border-style: none; border-width: 0;">&nbsp;</td>
-    <!-- 右侧：46% -->
-    <td style="width: 46%; padding: 0; border-style: none; border-width: 0;">
-      <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/3-stats.svg" alt="Stats" style="width: 100%;"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/2-most-commit-language.svg" alt="Most Commit Language" style="width: 48%; max-width: 340px; display: inline-block;"/>
+  <img src="https://raw.githubusercontent.com/gqy20/gqy20/main/profile-summary-card-output/vue/3-stats.svg" alt="Stats" style="width: 48%; max-width: 340px; display: inline-block;"/>
+</div>
 
-<!-- 3D 贡献图 (全宽) -->
+<!-- 3D 贡献图 -->
 <div align="center" style="margin-top: 30px;">
   <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D 贡献图" style="width: 100%; max-width: 800px;"/>
 </div>
@@ -88,21 +67,11 @@
 
 <div align="center">
   <p>
-    <a href="mailto:qingyu_ge@foxmail.com">
-      <img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
-    </a>
-    <a href="https://github.com/gqy20">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-    </a>
-    <a href="https://space.bilibili.com/500302320">
-      <img src="https://img.shields.io/badge/Bilibili-00A1D6?style=flat-square&logo=bilibili&logoColor=white" alt="Bilibili"/>
-    </a>
-    <a href="https://gitee.com/gqy20">
-      <img src="https://img.shields.io/badge/Gitee-C71D23?style=flat-square&logo=gitee&logoColor=white" alt="Gitee"/>
-    </a>
-    <a href="https://www.modelscope.cn/profile/gqy2025">
-      <img src="https://img.shields.io/badge/ModelScope-2DBE91?style=flat-square&logo=modelscope&logoColor=white" alt="ModelScope"/>
-    </a>
+    <a href="mailto:qingyu_ge@foxmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+    <a href="https://github.com/gqy20"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
+    <a href="https://space.bilibili.com/500302320"><img src="https://img.shields.io/badge/Bilibili-00A1D6?style=flat-square&logo=bilibili&logoColor=white" alt="Bilibili"/></a>
+    <a href="https://gitee.com/gqy20"><img src="https://img.shields.io/badge/Gitee-C71D23?style=flat-square&logo=gitee&logoColor=white" alt="Gitee"/></a>
+    <a href="https://www.modelscope.cn/profile/gqy2025"><img src="https://img.shields.io/badge/ModelScope-2DBE91?style=flat-square&logo=modelscope&logoColor=white" alt="ModelScope"/></a>
   </p>
 </div>
 
