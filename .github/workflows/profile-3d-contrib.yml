@@ -13,6 +13,11 @@ on:
 permissions:
   contents: write
 
+# 与其它写 main 的 workflow 串行推送，避免 ref lock 冲突
+concurrency:
+  group: gqy20-main-write
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest

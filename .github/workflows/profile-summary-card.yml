@@ -10,6 +10,11 @@ on:
   push:
     branches: [ main ]
 
+# 与其它写 main 的 workflow 串行推送，避免 ref lock 冲突
+concurrency:
+  group: gqy20-main-write
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -38,7 +43,15 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add profile-summary-card-output/*.svg
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
           git commit -m "Update profile summary cards" || exit 0
-          # 拉取远程更新以避免冲突
-          git pull --rebase || true
-          git push
+          # push 失败重试一次（应对其它 workflow 并发推送）
+          for i in 1 2 3; do
+            git fetch origin main && git rebase origin/main || true
+            if git push; then break; fi
+            echo "::warning::push 失败，$((i)) 次重试中..."
+            sleep 5
+          done

@@ -15,6 +15,11 @@ on:
 permissions:
   contents: write
 
+# 防止与其它写 main 的 workflow 并发推送
+concurrency:
+  group: gqy20-main-write
+  cancel-in-progress: false
+
 jobs:
   update-projects:
     runs-on: ubuntu-latest
@@ -91,11 +96,29 @@ jobs:
             let readme = fs.readFileSync('README.md', 'utf8');
 
             // 查找并替换项目部分
+            // startMarker 通常稳定；endMarker 因 README 重构可能变更，
+            // 用候选列表依次匹配，命中即用。
             const startMarker = '## 🌟 精选项目';
-            const endMarker = '### 🎯 Profile Summary';
+            const endMarkerCandidates = [
+              '### 📊 Profile Summary',
+              '### 🎯 Profile Summary',
+              '## 📊 Profile Summary',
+              '## 🎯 Profile Summary'
+            ];
+            const endMarker = endMarkerCandidates.find(m => readme.includes(m));
 
             const startIndex = readme.indexOf(startMarker);
-            const endIndex = readme.indexOf(endMarker);
+            const endIndex = endMarker ? readme.indexOf(endMarker) : -1;
+
+            if (startIndex === -1) {
+              console.error('无法找到开始标记: ' + startMarker);
+              process.exit(1);
+            }
+            if (!endMarker || endIndex === -1) {
+              console.error('无法找到结束标记。已尝试的候选:');
+              endMarkerCandidates.forEach(m => console.error('  - ' + m + '  ->  ' + (readme.includes(m) ? '命中' : '未命中')));
+              process.exit(1);
+            }
 
             if (startIndex !== -1 && endIndex !== -1) {
               const beforeProjects = readme.substring(0, startIndex);
@@ -126,7 +149,19 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git pull --rebase || true
+            # 先 fetch 后 rebase，避免 ref lock 冲突；失败再重试一次
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "::warning::rebase 冲突，回退到 merge"
+              git rebase --abort || true
+              git merge --no-edit -X ours origin/main || true
+            fi
             git commit -m "自动同步项目信息"
-            git push
+            # push 失败重试一次（应对并发推送）
+            for i in 1 2 3; do
+              if git push; then break; fi
+              echo "::warning::push 失败，$((i)) 次重试中..."
+              sleep 5
+              git fetch origin main && git rebase origin/main || true
+            done
           fi
